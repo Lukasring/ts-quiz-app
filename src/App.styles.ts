@@ -62,8 +62,48 @@ export const Wrapper = styled.div`
     height: 40px;
     margin: 20px 0;
     padding: 0 40px;
+    transition: transform 0.1s ease;
+
+    :hover {
+      transform: scale(1.05);
+    }
   }
+
   .start {
     max-width: 200px;
+  }
+`;
+
+export const SelectWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+
+  select {
+    border: 3px solid #fff;
+    box-shadow: 1px 2px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    color: #fff;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+    font-weight: bold;
+    font-size: 0.9rem;
+    height: 40px;
+    width: 95%;
+    margin: 6px 8px;
+    text-transform: capitalize;
+    background-color: transparent;
+    appearance: none;
+    background: linear-gradient(90deg, #56ccff, #6eafb4);
+    text-align: center;
+    text-align-last: center;
+    -moz-text-align-last: center;
+    size: 5;
+  }
+
+  option {
+    margin: 6px;
+    color: #fff;
+    background: #6eafb4;
   }
 `;
